@@ -1,8 +1,9 @@
-import { Switch, Transition } from '@headlessui/react'
-import Image from 'next/image'
-import { Fragment, useState } from 'react'
-import { MenuBarType } from '../../types/menu-bar'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+
+import { Switch, Transition } from '@headlessui/react'
+import { MenuBarType } from '../../types/menu-bar'
 
 type Props = {
   menuItems: MenuBarType[]

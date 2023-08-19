@@ -1,15 +1,15 @@
-import Head from 'next/head'
 import React, { useState, useEffect } from 'react'
+import Head from 'next/head'
+
 import { MenuBarType } from '../../types/menu-bar'
+
 import FooterBar from '../utilities/footerBar'
 import FooterMenu from '../utilities/footerMenu'
 import HeaderBar from '../utilities/headerBar'
 import MenuBar from '../utilities/menuBar'
 import MobileHeaderBar from '../utilities/mobileHeaderBar'
 import MobileMenuBar from '../utilities/mobileMenuBar'
-import MobileNavBar from '../utilities/mobileNavBar'
 import SocialHeader from '../utilities/socialHeader'
-import Image from 'next/image'
 import Carousel from './carousel'
 import PhoneContact from './phoneContact'
 

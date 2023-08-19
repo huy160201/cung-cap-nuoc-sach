@@ -1,6 +1,6 @@
-import { Menu, Transition } from '@headlessui/react'
+import { Menu } from '@headlessui/react'
 import { useState } from 'react'
-import { MenuBarType, Children } from '../../types/menu-bar'
+import { MenuBarType } from '../../types/menu-bar'
 import { useRouter } from 'next/router'
 
 type Props = {
