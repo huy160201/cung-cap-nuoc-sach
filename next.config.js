@@ -14,5 +14,8 @@ module.exports = withBundleAnalyzer({
   },
   experimental: {
     scrollRestoration: true
+  },
+  images: {
+    unoptimized: true
   }
 })
