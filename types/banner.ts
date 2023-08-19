@@ -1,11 +1,6 @@
-type Banner = {
+export type Banner = {
   id: number
-  categoryId: number
-  name: string
-  imageBanner: string
-  link: string
-  bannerStyle: string
-  bannerType: string
+  imageUrl: string
 }
 
 export type Banners = {

@@ -3,9 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Image from 'next/image'
+import { Banner } from '../../types/banner'
 
 const Carousel = () => {
-    const banners = [
+    const banners: Banner[] = [
         {
             id: 1,
             imageUrl: '/water-trucks.jpg'
