@@ -14,13 +14,10 @@ const HeaderBar = () => {
           }
           onClick={() => router.push('/')}
         >
-          <Image src="/logo.png" layout='fill' />
+          <Image alt="logo" src="/logo.png" layout="fill" />
         </div>
         <div className={'col-span-5 col-start-4 relative w-full my-2'}>
-          <Image
-            src='/long-truck.jpg'
-            layout={'fill'}
-          />
+          <Image alt="banner" src="/long-truck.jpg" layout={'fill'} />
         </div>
       </div>
     </>

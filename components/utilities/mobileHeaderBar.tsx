@@ -19,7 +19,6 @@ const MobileHeaderBar = (props: Props) => {
     setMenuOpen(false)
   }
 
-
   return (
     <div>
       <div className="flex items-end justify-between border-b">
@@ -28,7 +27,7 @@ const MobileHeaderBar = (props: Props) => {
           className="relative h-12 aspect-logo"
           onClick={() => router.push('/')}
         >
-          <Image src='/logo.png' layout="fill" />
+          <Image alt="logo" src="/logo.png" layout="fill" />
         </div>
         <div>
           {/* Button menu */}
@@ -110,11 +109,15 @@ const MobileHeaderBar = (props: Props) => {
 
           <div className="text-slate-600 px-2">
             Giám đốc: Trịnh Văn Bảo
-            <br /><br />
+            <br />
+            <br />
             Trụ sở : Thôn Hữu Cước - Xã Liên Hồng - Huyện Đan Phượng - Hà Nội.
-            <br /><br />
-            © Bản quyền thuộc về Công ty TNHH 1 thành viên Xây dựng môi trường đô thị số 1 Hà Nội.
-            <br /><br />
+            <br />
+            <br />
+            © Bản quyền thuộc về Công ty TNHH 1 thành viên Xây dựng môi trường
+            đô thị số 1 Hà Nội.
+            <br />
+            <br />
             Ghi rõ nguồn khi sử dụng thông tin trang này.
             <br />
           </div>
