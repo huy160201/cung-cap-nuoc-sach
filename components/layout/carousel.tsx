@@ -9,6 +9,7 @@ import Image from 'next/image'
 import { Banner } from '../../types/banner'
 
 const Carousel = () => {
+    /* eslint-disable */
     const swiper = useRef() as any
     const banners: Banner[] = [
         {
