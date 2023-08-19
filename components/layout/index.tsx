@@ -10,7 +10,7 @@ import MenuBar from '../utilities/menuBar'
 import MobileHeaderBar from '../utilities/mobileHeaderBar'
 import MobileMenuBar from '../utilities/mobileMenuBar'
 import SocialHeader from '../utilities/socialHeader'
-import Carousel from './carousel'
+import Carousels from './carousel'
 import PhoneContact from './phoneContact'
 
 type LayoutProps = {
@@ -80,7 +80,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
             <div className="bg-transparent w-screen flex items-center justify-center z-50">
               <div className={'max-w-6xl w-full'}>
-                <Carousel />
+                <Carousels />
               </div>
             </div>
           </>
@@ -100,7 +100,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
             <div className="bg-transparent w-screen flex items-center justify-center border-b z-50 bg-white z-50">
               <div className={'max-w-6xl w-full'}>
-                <Carousel />
+                <Carousels />
               </div>
             </div>
           </>
