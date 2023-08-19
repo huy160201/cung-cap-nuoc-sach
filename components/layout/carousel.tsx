@@ -1,5 +1,3 @@
-import { useRef } from 'react'
-
 import { Autoplay, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore from "swiper"
@@ -9,8 +7,6 @@ import Image from 'next/image'
 import { Banner } from '../../types/banner'
 
 const Carousel = () => {
-    /* eslint-disable */
-    const swiper = useRef() as any
     const banners: Banner[] = [
         {
             id: 1,
@@ -25,13 +21,9 @@ const Carousel = () => {
     return (
         <div className='w-full'>
             <Swiper
-                slidesPerView={1}
                 autoplay={{
                     delay: 3000
                 }}
-                onInit={(core: SwiperCore) => {
-                    swiper.current = core.el
-                  }}
                 loop={true}
                 pagination={{
                     dynamicBullets: true
