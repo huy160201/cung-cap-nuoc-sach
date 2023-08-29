@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 
-import { MenuBarType } from '../../types/menu-bar'
+import { menuItems } from '../../confict/menu'
 
 import FooterBar from '../utilities/footerBar'
 import FooterMenu from '../utilities/footerMenu'
@@ -12,38 +12,13 @@ import MobileMenuBar from '../utilities/mobileMenuBar'
 import SocialHeader from '../utilities/socialHeader'
 import Carousels from './carousel'
 import PhoneContact from './phoneContact'
+import RightSideImage from './rightSideImage'
 
 type LayoutProps = {
   children: React.ReactNode
 }
 
 export default function Layout({ children }: LayoutProps) {
-  const menuItems: MenuBarType[] = [
-    {
-      id: 0,
-      name: 'Trang chủ',
-      path: '/',
-      children: []
-    },
-    {
-      id: 1,
-      name: 'Giới thiệu',
-      path: '/introduce',
-      children: []
-    },
-    {
-      id: 2,
-      name: 'Dịch vụ',
-      path: '/',
-      children: []
-    },
-    {
-      id: 3,
-      name: 'Liên hệ',
-      path: '/contact',
-      children: []
-    }
-  ]
   const [isMobile, setIsMobile] = useState<boolean>(false)
 
   useEffect(() => {
@@ -106,7 +81,18 @@ export default function Layout({ children }: LayoutProps) {
           </>
         )}
         {/* Index Main Component */}
-        {children}
+        <div className="w-screen flex items-center justify-center">
+          <div
+            className={`max-w-6xl w-full ${!isMobile && 'grid'} grid-cols-10`}
+          >
+            <div className="col-span-8 border-r mb-6 pr-2">{children}</div>
+            {!isMobile && (
+              <div className="col-span-2 pl-2">
+                <RightSideImage />
+              </div>
+            )}
+          </div>
+        </div>
         {/* Footer Menu */}
         <div className="bg-transparent w-screen hidden md:flex items-center justify-center">
           <div className={'max-w-6xl w-full'}>

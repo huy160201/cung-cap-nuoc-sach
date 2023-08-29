@@ -1,21 +1,10 @@
 import Image from 'next/image'
 
 import { Carousel } from 'react-responsive-carousel'
-import { Banner } from '../../types/banner'
+import { banners } from '../../confict/banner'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 const Carousels = () => {
-  const banners: Banner[] = [
-    {
-      id: 1,
-      imageUrl: '/water-trucks.jpg'
-    },
-    {
-      id: 2,
-      imageUrl: '/white-truck.jpg'
-    }
-  ]
-
   return (
     <div className="w-full">
       <Carousel autoPlay={true} infiniteLoop={true}>

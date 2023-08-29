@@ -1,8 +1,42 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
+import { districts } from '../../confict/menu'
 
 const RightSideImage = () => {
+  const router = useRouter()
+
   return (
-    <div className="w-full">
+    <div className="w-full mt-6">
+      <div>
+        <div className="py-3 mb-2 bg-red-600 text-white flex items-center gap-2 justify-center">
+          <div>Trung tâm nước sạch</div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+        {districts.map((district, id) => (
+          <div
+            key={id}
+            onClick={() => router.push(district.url)}
+            className={`${
+              router.pathname.includes(district.url) && 'opacity-70'
+            } cursor-pointer p-2 bg-red-500 rounded-md text-center text-white border border-white hover:opacity-70 uppercase`}
+          >
+            {district.name}
+          </div>
+        ))}
+      </div>
       <div className="border-b py-4">
         <div className="relative w-full aspect-post">
           <Image alt="support" src="/support-image.png" layout="fill" />

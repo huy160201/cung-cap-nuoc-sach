@@ -6,7 +6,7 @@ const HomePageContent = () => {
   const contentClassName = 'mt-4'
 
   return (
-    <div className="m-4">
+    <div className="mr-4 my-4">
       <div className={titleClassName}>
         Địa chỉ nước sạch an toàn nhất Hà Nội
       </div>

@@ -1,7 +1,7 @@
-import { Menu } from '@headlessui/react'
-import { useState } from 'react'
-import { MenuBarType } from '../../types/menu-bar'
 import { useRouter } from 'next/router'
+
+import { Menu, Transition } from '@headlessui/react'
+import { Children, MenuBarType } from '../../types/menu-bar'
 
 type Props = {
   menuItems: MenuBarType[]
@@ -10,7 +10,6 @@ type Props = {
 function MenuBar(props: Props) {
   const router = useRouter()
   const { menuItems } = props
-  const [enabled, setEnabled] = useState(false)
 
   const handleClickCategory = (path: string) => {
     router.push(path)
@@ -47,6 +46,25 @@ function MenuBar(props: Props) {
                 {menuItem.name}
               </Menu.Button>
             </div>
+
+            <Transition show={true}>
+              <Menu.Items className="group-hover:block hidden absolute mt-0 w-max bg-red-700 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                {menuItem.children?.map((child: Children, index: number) => (
+                  <div key={index} className={`px-1 py-1`}>
+                    <Menu.Item>
+                      <button
+                        className={`${
+                          router.pathname.includes(child.path) && 'bg-red-600'
+                        } text-white uppercase hover:bg-red-600 flex w-full items-center px-2 py-2 pr-12 text-sm`}
+                        onClick={() => handleClickCategory(child.path)}
+                      >
+                        {child.name}
+                      </button>
+                    </Menu.Item>
+                  </div>
+                ))}
+              </Menu.Items>
+            </Transition>
           </Menu>
         ))}
       </div>
@@ -66,26 +84,6 @@ function MenuBar(props: Props) {
             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
           />
         </svg>
-        <div
-          className={`${
-            enabled ? 'block' : 'hidden'
-          } absolute border right-0 group-hover:block`}
-        >
-          <form className="flex inline">
-            <input
-              onFocus={() => setEnabled(true)}
-              onBlur={() => setEnabled(false)}
-              type="text"
-              placeholder="Nhập từ khóa"
-              className="py-1.5 px-2"
-            />
-            <input
-              type="submit"
-              value="Tìm kiếm"
-              className="text-white bg-[#BF081D] py-1.5 px-2 cursor-pointer"
-            />
-          </form>
-        </div>
       </div>
     </div>
   )
