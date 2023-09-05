@@ -41,7 +41,7 @@ const Page = () => {
         cầu cần thiết của cuộc sống.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/cau-giay.jpg" layout="fill" />
         </div>
       </div>

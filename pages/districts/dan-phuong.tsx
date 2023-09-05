@@ -34,7 +34,7 @@ const Page = () => {
         cấp nguồn nước dành cho người dùng.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/xe-1.jpg" layout="fill" />
         </div>
       </div>
@@ -57,7 +57,7 @@ const Page = () => {
         là một sự lựa chọn tốt nhất cho cả nhà cung cấp và người tiêu dùng.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/xe-2.jpg" layout="fill" />
         </div>
       </div>

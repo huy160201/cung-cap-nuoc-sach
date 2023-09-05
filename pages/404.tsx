@@ -8,7 +8,7 @@ const Page = () => {
   const firstParagraph = 'font-bold text-sm mt-4'
 
   return (
-    <div className="">
+    <div>
       <div className={titleClassName}>404 - Page not found</div>
       <div className={firstParagraph}>
         Có vẻ như trang bạn đang tìm kiếm hiện không tìm thấy, vui lòng quay lại

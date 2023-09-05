@@ -11,10 +11,9 @@ function MobileMenuBar(props: Props) {
 
   const handleClickCategory = (path: string) => router.push(path)
 
-
   return (
     <div className="w-full">
-      <ul className="flex overflow-x-auto items-center">
+      <ul className="flex overflow-x-auto items-center pt-1.5 pl-2">
         <li>
           <button onClick={() => router.push('/')}>
             <svg
@@ -29,7 +28,7 @@ function MobileMenuBar(props: Props) {
         </li>
         {menuItems.map((menuItem: MenuBarType) => (
           <li
-            className="whitespace-nowrap text-lg font-medium px-2 py-2"
+            className="whitespace-nowrap text-sm font-medium px-2 py-2"
             key={menuItem.id}
           >
             <button onClick={() => handleClickCategory(menuItem.path)}>

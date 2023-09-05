@@ -16,7 +16,7 @@ export const menuItems: MenuBarType[] = [
   {
     id: 2,
     name: 'Khu vực',
-    path: '/',
+    path: '/locations',
     children: [
       {
         id: 21,

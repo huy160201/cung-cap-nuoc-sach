@@ -108,12 +108,6 @@ const MobileHeaderBar = (props: Props) => {
           </div>
 
           <div className="text-slate-600 px-2">
-            Giám đốc: Trịnh Văn Bảo
-            <br />
-            <br />
-            Trụ sở : Thôn Hữu Cước - Xã Liên Hồng - Huyện Đan Phượng - Hà Nội.
-            <br />
-            <br />
             © Bản quyền thuộc về Công ty TNHH 1 thành viên Xây dựng môi trường
             đô thị số 1 Hà Nội.
             <br />

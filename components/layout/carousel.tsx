@@ -7,7 +7,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'
 const Carousels = () => {
   return (
     <div className="w-full">
-      <Carousel autoPlay={true} infiniteLoop={true}>
+      <Carousel autoPlay={true} showThumbs={false} infiniteLoop={true}>
         {banners.map(banner => (
           <div key={banner.id} className={'w-full relative aspect-[3/1]'}>
             <Image

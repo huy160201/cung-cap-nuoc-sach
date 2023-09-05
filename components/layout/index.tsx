@@ -81,11 +81,13 @@ export default function Layout({ children }: LayoutProps) {
           </>
         )}
         {/* Index Main Component */}
-        <div className="w-screen flex items-center justify-center">
+        <div className="w-screen flex items-center justify-center pt-4">
           <div
             className={`max-w-6xl w-full ${!isMobile && 'grid'} grid-cols-10`}
           >
-            <div className="col-span-8 border-r mb-6 pr-2">{children}</div>
+            <div className="col-span-8 border-r mb-6 pr-2 pl-2 md:pl-0">
+              {children}
+            </div>
             {!isMobile && (
               <div className="col-span-2 pl-2">
                 <RightSideImage />

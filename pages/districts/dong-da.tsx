@@ -36,7 +36,7 @@ const Page = () => {
         một trong những việc đáng báo động.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/dong-da-1.jpg" layout="fill" />
         </div>
       </div>
@@ -56,7 +56,7 @@ const Page = () => {
         có lợi nhất.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/dong-da-2.jpg" layout="fill" />
         </div>
       </div>

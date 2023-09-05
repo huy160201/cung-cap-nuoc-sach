@@ -33,7 +33,7 @@ const Page = () => {
         trong sinh hoạt hằng ngày.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/soc-son-1.png" layout="fill" />
         </div>
       </div>
@@ -56,7 +56,7 @@ const Page = () => {
         cho khách hàng.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/soc-son-2.png" layout="fill" />
         </div>
       </div>

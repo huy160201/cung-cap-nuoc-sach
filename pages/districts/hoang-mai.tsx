@@ -32,7 +32,7 @@ const Page = () => {
         thì việc mua nước sạch để tiêu dùng là điều không có gì dễ hiểu.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/hoang-mai-1.jpg" layout="fill" />
         </div>
       </div>
@@ -51,7 +51,7 @@ const Page = () => {
         hoạt uy tín sẽ đem đến sự yên tâm dành cho người sử dụng.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/hoang-mai-2.jpg" layout="fill" />
         </div>
       </div>

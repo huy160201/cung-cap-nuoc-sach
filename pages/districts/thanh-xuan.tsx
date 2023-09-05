@@ -32,7 +32,7 @@ const Page = () => {
         sạch sinh hoạt bình 20 lít.
       </div>
       <div className="flex justify-center my-4">
-        <div className="relative w-1/2 aspect-highlight">
+        <div className="relative w-2/3 md:w-1/2 aspect-highlight">
           <Image alt="water-truck" src="/xe-1.jpg" layout="fill" />
         </div>
       </div>
